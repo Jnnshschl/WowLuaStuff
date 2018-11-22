@@ -1,5 +1,44 @@
-#Collection of Lua stuff for WoW
+# Collection of Lua stuff for WoW
 
 In this repo you can find some Lua scripts to dump stuff from WoW to a JSON.
 
 These script are used in my bot.
+
+## EquipmentSlotDump.lua
+will dump any InventorySlot as json
+
+```c#
+public enum InventorySlot : int
+    {
+        INVSLOT_AMMO = 0,
+        INVSLOT_HEAD = 1,
+        INVSLOT_NECK = 2,
+        INVSLOT_SHOULDER = 3,
+        INVSLOT_SHIRT = 4,
+        INVSLOT_CHEST = 5,
+        INVSLOT_WAIST = 6,
+        INVSLOT_LEGS = 7,
+        INVSLOT_FEET = 8,
+        INVSLOT_WRIST = 9,
+        INVSLOT_HANDS = 10,
+        INVSLOT_RING1 = 11,
+        INVSLOT_RING2 = 12,
+        INVSLOT_TRINKET1 = 13,
+        INVSLOT_TRINKET2 = 14,
+        INVSLOT_BACK = 15,
+        INVSLOT_MAINHAND = 16,
+        INVSLOT_OFFHAND = 17,
+        INVSLOT_RANGED = 18,
+        INVSLOT_TABARD = 19,
+        CONTAINER_BAG_1 = 20,
+        CONTAINER_BAG_2 = 21,
+        CONTAINER_BAG_3 = 22,
+        CONTAINER_BAG_4 = 23
+    }
+```
+
+## InventoryDump.lua
+will dump you whole bag items to a json
+
+## ItemStatsDump.lua
+will dump the primary stats from an item to a json
