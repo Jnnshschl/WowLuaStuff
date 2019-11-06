@@ -2,14 +2,16 @@
 
 -- v change that lmao
 abotItemSlot=1;
+abotItemLink=GetInventoryItemLink('player',abotItemSlot);
+-- or
+abotItemLink="item:41002";
 
-abotItemStatsResult='noItem';
+abotItemStatsResult='';
 stats={};
-abStats=GetItemStats(GetInventoryItemLink('player',abotItemSlot),stats);
+abStats=GetItemStats(abotItemLink,stats);
 
 abotItemStatsResult=
 '{'..
-    '"armor": "'..tostring(stats["ITEM_MOD_ARMOR_SHORT"] or 0)..'",'..
     '"stamina": "'..tostring(stats["ITEM_MOD_STAMINA_SHORT"] or 0)..'",'..
     '"agility": "'..tostring(stats["ITEM_MOD_AGILITY_SHORT"] or 0)..'",'..
     '"strenght": "'..tostring(stats["ITEM_MOD_STRENGHT_SHORT"] or 0)..'",'..

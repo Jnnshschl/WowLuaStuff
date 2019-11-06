@@ -28,6 +28,6 @@ abotItemInfoResult=
     '"type": "'..tostring(abType or 0)..'",'..
     '"subtype": "'..tostring(abSubType or 0)..'",'..
     '"maxStack": "'..tostring(abStackCount or 0)..'",'..
-    '"equiplocation": "'..tostring(abEquipLoc or 0)..'",'..
+    '"equiplocation": "'..tostring(abotItemSlot or 0)..'",'..
     '"sellprice": "'..tostring(abSellPrice or 0)..'"'..
 '}';
